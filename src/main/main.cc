@@ -1,10 +1,6 @@
-#include <iostream>
-#include "src/lib/Greeting.h"
+#include<iostream>
 
 int main()
 {
-    Greeting *greet = new Greeting();
-    std::cout << greet->getGreetingMessage() << std::endl;
-
     return EXIT_SUCCESS;
 }
