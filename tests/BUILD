@@ -2,7 +2,7 @@ cc_test(
     name = "tests",
     srcs = glob(["**/*.cc"]),
     deps = [
-        "//src/lib:GreetingLib",
+        "//src/lib:ChessLib",
         "@googletest//:gtest_main",
     ],
 )
