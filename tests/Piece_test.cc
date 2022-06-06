@@ -1,28 +1,38 @@
 #include "gtest/gtest.h"
 #include "src/lib/Piece.h"
 
+#include<string>
+
 using std::invalid_argument;
 using std::logic_error;
+using std::string;
 
 TEST(PieceShould, ReturnColor){
     Piece piece = Piece("white", "a3", 1);
-    std::string actual = piece.get_color();
-    std::string expected = "white";
+    string actual = piece.get_color();
+    string expected = "white";
     EXPECT_EQ(expected, actual);
 }
 
 TEST(PieceShould, SetCuttentSquare){
     Piece piece = Piece("white", "a3", 1);
-    std::string actual = piece.current_square;
-    std::string expected = "a3";
+    string actual = piece.current_square;
+    string expected = "a3";
     EXPECT_EQ(expected, actual);
 }
 
-TEST(PieceShould, SetValue){
+TEST(PieceShould, SetMaterialValue){
     Piece piece = Piece("white", "a3", 5);
     double actual = piece.material_value;
     double expected = 5.0;
     EXPECT_DOUBLE_EQ(expected, actual);
+}
+
+TEST(PieceShould, SetName){
+    Piece piece = Piece("white", "a3", 5, "N");
+    string actual = piece.name;
+    string expected = "N";
+    EXPECT_EQ(expected, actual);
 }
 
 TEST(PieceShould, SetValueForBlack){

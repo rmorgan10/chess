@@ -3,8 +3,8 @@
 using std::invalid_argument;
 using std::logic_error;
 
-Piece::Piece(string color_val, string current_square_val, int base_value_val)
-    : color{color_val}, current_square{current_square_val}, base_value{base_value_val} {
+Piece::Piece(string color_val, string current_square_val, int base_value_val, string name_val)
+    : color{color_val}, current_square{current_square_val}, base_value{base_value_val}, name{name_val} {
     
     // Set value based on color.
     if (color_val == "white") {

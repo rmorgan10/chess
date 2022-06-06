@@ -10,13 +10,14 @@ using std::vector;
 
 class Piece {
 public:
+    string name;
     double material_value;
     string current_square;
 
     string get_color();
     vector<string> get_all_moves();
 
-    Piece(string color_val, string current_square_val, int base_value_val);
+    Piece(string color_val, string current_square_val, int base_value_val, string name="");
 
 private:
     string color;
