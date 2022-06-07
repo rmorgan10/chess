@@ -21,10 +21,6 @@ Piece::Piece(string color_val, string current_square_val, int base_value_val, st
     }
 }
 
-string Piece::get_color() {
-    return color;
-}
-
-vector<string> Piece::get_all_moves(){
+vector<vector<int>> Piece::get_all_moves(){
     throw logic_error("Function not yet implemented");
 }

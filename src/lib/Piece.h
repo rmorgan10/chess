@@ -10,18 +10,19 @@ using std::vector;
 
 class Piece {
 public:
-    string name;
-    double material_value;
-    string current_square;
-
-    string get_color();
-    vector<string> get_all_moves();
-
-    Piece(string color_val, string current_square_val, int base_value_val, string name="");
-
-private:
-    string color;
+    // Attributes.
     int base_value;
+    string color;
+    string current_square;
+    double material_value;
+    string name;
+    
+    // Constructor.
+    Piece(string color_val, string current_square_val, int base_value_val, string name_val);
+
+    // Methods.
+    vector<vector<int>> get_all_moves();
+    
     
 };
 
