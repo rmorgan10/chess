@@ -10,7 +10,7 @@ public:
     Pawn(string current_square_val, string color_val, int base_value_val=1, string name_val="P");
 
     // Method to be reimplemented.
-    vector<vector<int>> get_all_moves();
+    vector< vector< int > > get_all_moves();
 
 };
 

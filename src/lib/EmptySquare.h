@@ -10,7 +10,7 @@ public:
     EmptySquare(string current_square_val, string color_val="none", int base_value_val=0, string name_val=" ");
 
     // Method to be reimplemented.
-    vector<vector<int>> get_all_moves();
+    vector< vector < int > > get_all_moves();
 
 };
 

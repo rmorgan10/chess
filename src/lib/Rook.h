@@ -10,7 +10,7 @@ public:
     Rook(string current_square_val, string color_val, int base_value_val=5, string name_val="R");
 
     // Method to be reimplemented.
-    vector<vector<int>> get_all_moves();
+    vector< vector< int > > get_all_moves();
 
 };
 

@@ -10,7 +10,7 @@ public:
     Queen(string current_square_val, string color_val, int base_value_val=9, string name_val="Q");
 
     // Method to be reimplemented.
-    vector<vector<int>> get_all_moves();
+    vector< vector< int > > get_all_moves();
 
 };
 

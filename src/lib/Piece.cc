@@ -21,6 +21,13 @@ Piece::Piece(string current_square_val, string color_val, int base_value_val, st
     }
 }
 
-vector<vector<int>> Piece::get_all_moves(){
+Piece::Piece() {
+    color = "none";
+    current_square = "";
+    base_value = 0;
+    name = "";
+}
+
+vector< vector< int > > Piece::get_all_moves(){
     throw logic_error("Function not yet implemented");
 }
